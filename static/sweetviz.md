@@ -42,31 +42,32 @@ SweetViz works seamlessly with pandas DataFrames. Below is an example usage:
 
 - iii. Upload your CSV dataset and generate EDA reports!
 
-<br>![alt text](static\image-1.png)<br>
+<br>![alt text](/static/image-1.png)<br>
+
 
 <h3>Visualizing and Interpreting Reports</h3>
 After running the Generate Full Report, you will get:
 
-<br>![alt text](static\image-2.png)<br>
+<br>![alt text](/static/image-2.png)<br>
 - General statistics about each column.
 - Feature distributions for numerical and categorical data.
 - Correlation heatmaps showing relationships between variables.
 - Missing value summaries.
-<br>![alt text](static\image-3.png)<br>
+<br>![alt text](/static/image-3.png)<br>
 
 This intuitive visualization helps identify potential data preprocessing steps.
 
 <h3>Customization and Advanced Usage</h3>
 SweetViz also supports advanced customization:
 
-<br>![alt text](static\image-4.png)<br>
+<br>![alt text](/static/image-4.png)<br>
 
 Comparing Two Datasets
 To compare a training and test dataset:
 Target Variable Analysis
 You can analyze how features impact a specific target variable:
 
-<br>![alt text](static\image-5.png)<br>
+<br>![alt text](/static/image-5.png)<br>
 
 <h3>Conclusion</h3>
 SweetViz is a must-have tool for automated, quick, and insightful exploratory data analysis. Whether you are handling small datasets or large-scale projects, this library saves time and enhances data understanding.
