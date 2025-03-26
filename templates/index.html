@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Project Hub</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">AI Project Hub</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>What is AI?</h2>
+        <p> Artificial Intelligence (AI) is a way of making computers think and learn like humans. It powers things 
+            like smart assistants, self-driving cars, and recommendation systems. 
+            Instead of just following instructions, AI learns from data, 
+            finds patterns, and makes decisions. From chatbots to medical diagnosis,
+             AI is shaping the future, and understanding it can open up a world of possibilities!</p>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Why Explore These Projects?</h2>
+        <div class="featurecards">
+            <div class="feature-card">
+                <h3>🔥 Hands-on Learning</h3>
+                <p>AI isn’t just about theory—it’s about building and experimenting! Dive into real-world AI projects where you can see how models
+                     work, tweak parameters, and understand AI concepts by doing. From image recognition to chatbot creation, experience AI in action
+                      and gain practical skills that stick.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🚀 Open Source</h3>
+                <p>AI should be accessible to everyone! Explore our open-source GitHub repositories, where you can dive into the code, experiment with 
+                    models, and even contribute. Whether you're a beginner or an experienced developer, our projects give you the freedom to learn, modify, 
+                    and innovate.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🌍 Real-World Applications</h3>
+                <p>AI isn’t just theory—it’s transforming industries! Explore how AI is used in healthcare, finance, automation, and more. 
+                    Our projects showcase real-world 
+                    implementations, helping you connect concepts with practical applications.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta hidden">
+        <h2>Ready to Explore AI?</h2>
+        <p>Check out our featured projects below and start your AI journey today!</p>
+    </section>
+
+    <section class="projects" id="projects">
+        <ul>
+            {% for project in projects %}
+            <li class="project-item hidden">
+                <h2>{{ project.name }}</h2>
+                <p>{{ project.desc}}"</p>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+    
+    <div class="btns">
+        <div class="btn" onclick="window.location.href='https://github.com'">Github Links</div>
+        <div class="btn" onclick="window.location.href='https://github.com'">Live Demo</div>
+        <div class="btn" onclick="window.location.href='/blogs'">Blogs</div>
+    </div>
+
+
+    <footer id="contact">
+        <p>© 2025 AI Project Hub | All Rights Reserved</p>
+    </footer>
+    
+    <script src = "/static/script.js"></script>
+</body>
+</html>

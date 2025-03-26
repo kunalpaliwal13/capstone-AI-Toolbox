@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">AI Project Hub</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="gapspace"></div>
+    <div class="projects hidden">
+        <ul>
+            <h1>Blogs</h1>
+            {% for i in projects %}
+            <li class="project-itemx ">
+                <h2><a href="{{ url_for('blog', project_id=i.id) }}">{{ i.name }}</a></h2>
+
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <script src = "/static/script.js"></script>
+</body>
+</html>
