@@ -373,3 +373,18 @@ footer {
 .gapspace{
     margin-top: 8%;
 }
+
+@media (max-width: 768px) {
+    .navbar{display: flex; justify-content: flex-start; align-items: center; height: 5%;}
+    .nav-links{display: none;}
+    .logo{font-weight: 400;}
+    .about{width: 80%; 
+        >h2{margin-top: 20%; font-size: 40px;}
+            >p{font-size: 15px; width: 120%;}}
+    .featurecards{flex-direction: column;}
+    .feature-card{width: 100%;}
+    .cta{padding: 5%;}
+    .project-item {margin-left: 5%;}
+    .projects ul{>h1{margin-top: 10%;}}
+
+}
