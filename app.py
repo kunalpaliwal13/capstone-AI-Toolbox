@@ -4,6 +4,8 @@ import re
 import os
 
 app = Flask(__name__)
+
+# Sample AI Projects Data
 projects = [
     {
         "id": "sweetviz",
@@ -14,40 +16,40 @@ projects = [
         "link":"http://capstone.vanshr.live:8501/"
     },
     {
-        "id": "image-recognition",
-        "name": "Image Recognition",
-        "github": "https://github.com/example/image-recognition",
-        "website": "https://image-recognition.example.com",
-        "blog": "image-recognition",
+        "id": "h2oautoml",
+        "name": "H2O Auto-ML",
+        "github": "https://github.com/VITB-Tigers/H20AutoML",
+        "link": "http://capstone.vanshr.live:8502/",
+        "blog": "/h2oautoml",
         "desc": "Lorem Ipsum is a standard placeholder text used in the printing and typesetting industry. It originates from a scrambled section of De Finibus Bonorum et Malorum, a work by Cicero written in 45 BC. Designers and developers use Lorem Ipsum to fill spaces in layouts, allowing them to focus on design rather than content. The text has no real meaning but mimics natural language patterns, making it ideal for mockups and prototypes. Over time, it has become the industry standard for testing typography, readability, and visual balance in digital and print media. Many online generators can create Lorem Ipsum text of any length."
 
     },
     {
-        "id": "recommendation-system",
-        "name": "Recommendation System",
-        "github": "https://github.com/example/recommendation-system",
-        "website": "https://recommendation.example.com",
-        "blog": "recommendation-system",
+        "id": "GAN",
+        "name": "GAN",
+        "github": "https://github.com/VITB-Tigers/GAN-Project",
+        "link": "https://recommendation.example.com",
+        "blog": "GAN",
         "blogcontent": "lorem50sjkcajscbjksabdkjabddakdbajsbdbdkjsabdakdbakjsbdjkbd",
         "desc": "Lorem Ipsum is a standard placeholder text used in the printing and typesetting industry. It originates from a scrambled section of De Finibus Bonorum et Malorum, a work by Cicero written in 45 BC. Designers and developers use Lorem Ipsum to fill spaces in layouts, allowing them to focus on design rather than content. The text has no real meaning but mimics natural language patterns, making it ideal for mockups and prototypes. Over time, it has become the industry standard for testing typography, readability, and visual balance in digital and print media. Many online generators can create Lorem Ipsum text of any length."
 
     },
     {
-        "id": "text-summarizer",
-        "name": "Text Summarizer",
-        "github": "https://github.com/example/text-summarizer",
-        "website": "https://text-summarizer.example.com",
-        "blog": "text-summarizer",
+        "id": "autoviz",
+        "name": "AutoViz",
+        "github": "https://github.com/VITB-Tigers/AutoViz-Python-Library",
+        "link": "/",
+        "blog": "autoviz",
         "blogcontent": "lorem50sjkcajscbjksabdkjabddakdbajsbdbdkjsabdakdbakjsbdjkbd",
         "desc": "Lorem Ipsum is a standard placeholder text used in the printing and typesetting industry. It originates from a scrambled section of De Finibus Bonorum et Malorum, a work by Cicero written in 45 BC. Designers and developers use Lorem Ipsum to fill spaces in layouts, allowing them to focus on design rather than content. The text has no real meaning but mimics natural language patterns, making it ideal for mockups and prototypes. Over time, it has become the industry standard for testing typography, readability, and visual balance in digital and print media. Many online generators can create Lorem Ipsum text of any length."
 
     },
     {
-        "id": "voice-assistant",
-        "name": "Voice Assistant",
-        "github": "https://github.com/example/voice-assistant",
-        "website": "https://voice-assistant.example.com",
-        "blog": "voice-assistant",
+        "id": "rag",
+        "name": "RAG",
+        "github": "https://github.com/VITB-Tigers/RAG-Project",
+        "link": "/",
+        "blog": "rag",
         "blogcontent": "lorem50sjkcajscbjksabdkjabddakdbajsbdbdkjsabdakdbakjsbdjkbd",
         "desc": "Lorem Ipsum is a standard placeholder text used in the printing and typesetting industry. It originates from a scrambled section of De Finibus Bonorum et Malorum, a work by Cicero written in 45 BC. Designers and developers use Lorem Ipsum to fill spaces in layouts, allowing them to focus on design rather than content. The text has no real meaning but mimics natural language patterns, making it ideal for mockups and prototypes. Over time, it has become the industry standard for testing typography, readability, and visual balance in digital and print media. Many online generators can create Lorem Ipsum text of any length."
 
@@ -92,9 +94,8 @@ def blog(project_id):
 
     return render_template("blog_template.html", content=html_content)
 
-
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
 
 
 
@@ -114,3 +115,60 @@ if __name__ == "__main__":
 
 
 
+
+
+
+
+
+
+# @app.route("/sweetviz")
+# def trial():
+#     md_path = os.path.join("static", "x.md")  # Ensure correct path
+#     if not os.path.exists(md_path):
+#         return "Markdown file not found!", 404
+
+#     with open(md_path, "r", encoding="utf-8") as f:
+#         md_content = f.read()
+
+#     # Convert Markdown to HTML
+#     html_content = convert_markdown(md_content)
+
+#     template = """
+#     <!DOCTYPE html>
+#     <html lang="en">
+#     <head>
+#         <meta charset="UTF-8">
+#         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+#         <title>Markdown Viewer</title>
+#         <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+#     </head>
+#     <body>
+#     <nav class="navbar">
+#         <div class="logo">AI Project Hub</div>
+#         <ul class="nav-links">
+#             <li><a href="/">Home</a></li>
+#             <li><a href="#about">About</a></li>
+#             <li><a href="#features">Features</a></li>
+#             <li><a href="#projects">Projects</a></li>
+#             <li><a href="#contact">Contact</a></li>
+#         </ul>
+#     </nav>
+#      <div class="blog-body">
+#     <section class="cta-blog">
+#         {{ content|safe }}
+#     </section>
+#     </div>
+#     <script src="{{ url_for('static', filename='script.js') }}"></script>
+#     </body>
+#     </html>
+#     """
+#     return render_template_string(template, content=html_content)
+
+
+
+# @app.route("/blog/<project_id>")
+# def blog(project_id):
+#     project = next((p for p in projects if p["id"] == project_id), None)
+#     if not project:
+#         return "Project not found", 404
+#     return render_template("blog.html", project=project)
