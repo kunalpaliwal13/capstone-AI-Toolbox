@@ -13,9 +13,9 @@
         <div class="logo" onclick="window.location.href='/'">AI Project Hub</div>
         <ul class="nav-links">
             <li><a href="/">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#features">Features</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="/projlist">Live Demo</a></li>
+            <li><a href="https://github.com/VITB-Tigers">Github Links</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -64,21 +64,14 @@
     <section class="projects" id="projects">
         <ul>
             {% for project in projects %}
-            <li class="project-item hidden">
+            <li onclick="window.location.href=`{{ url_for('blog', project_id=project.blog) }}`" class="project-item hidden">
                 <h2>{{ project.name }}</h2>
-                <p>{{ project.desc}}"</p>
+                <p>{{ project.desc}}</p>
             </li>
             {% endfor %}
         </ul>
     </section>
     
-    <div class="btns">
-        <div class="btn" onclick="window.location.href='https://github.com/VITB-Tigers'">Github Links</div>
-        <div class="btn" onclick="window.location.href='/projlist' ">Live Demo</div>
-        <div class="btn" onclick="window.location.href='/blogs'">Blogs</div>
-    </div>
-
-
     <footer id="contact">
         <p>© 2025 AI Project Hub | All Rights Reserved</p>
     </footer>

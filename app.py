@@ -10,7 +10,7 @@ projects = [
     {
         "id": "sweetviz",
         "name": "SweetViz",
-        "desc": "Lorem Ipsum is a standard placeholder text used in the printing and typesetting industry. It originates from a scrambled section of De Finibus Bonorum et Malorum, a work by Cicero written in 45 BC. Designers and developers use Lorem Ipsum to fill spaces in layouts, allowing them to focus on design rather than content. The text has no real meaning but mimics natural language patterns, making it ideal for mockups and prototypes. Over time, it has become the industry standard for testing typography, readability, and visual balance in digital and print media. Many online generators can create Lorem Ipsum text of any length.",
+        "desc": "A Python library that generates beautiful, high-density visualizations for a quick and easy exploration of your data. It helps in analyzing and comparing datasets with clear and interactive reports.",
         "github": "https://github.com/VITB-Tigers/SweetViz-Python-Library",
         "blog": "/sweetviz",
         "link":"http://capstone.vanshr.live:8501/"
@@ -21,7 +21,7 @@ projects = [
         "github": "https://github.com/VITB-Tigers/H20AutoML",
         "link": "http://capstone.vanshr.live:8502/",
         "blog": "/h2oautoml",
-        "desc": "Lorem Ipsum is a standard placeholder text used in the printing and typesetting industry. It originates from a scrambled section of De Finibus Bonorum et Malorum, a work by Cicero written in 45 BC. Designers and developers use Lorem Ipsum to fill spaces in layouts, allowing them to focus on design rather than content. The text has no real meaning but mimics natural language patterns, making it ideal for mockups and prototypes. Over time, it has become the industry standard for testing typography, readability, and visual balance in digital and print media. Many online generators can create Lorem Ipsum text of any length."
+        "desc": "A comprehensive framework for training AutoML models using H2O's AutoML library. This project includes data ingestion, transformation, and model training functionalities, all accessible through an interactive Streamlit web application."
 
     },
     {
@@ -30,8 +30,7 @@ projects = [
         "github": "https://github.com/VITB-Tigers/GAN-Project",
         "link": "https://recommendation.example.com",
         "blog": "GAN",
-        "blogcontent": "lorem50sjkcajscbjksabdkjabddakdbajsbdbdkjsabdakdbakjsbdjkbd",
-        "desc": "Lorem Ipsum is a standard placeholder text used in the printing and typesetting industry. It originates from a scrambled section of De Finibus Bonorum et Malorum, a work by Cicero written in 45 BC. Designers and developers use Lorem Ipsum to fill spaces in layouts, allowing them to focus on design rather than content. The text has no real meaning but mimics natural language patterns, making it ideal for mockups and prototypes. Over time, it has become the industry standard for testing typography, readability, and visual balance in digital and print media. Many online generators can create Lorem Ipsum text of any length."
+        "desc": "Generative Adversarial Network (GAN) for generating realistic synthetic customer churn data to enable predictive modeling and insights without using sensitive customer information."
 
     },
     {
@@ -40,8 +39,7 @@ projects = [
         "github": "https://github.com/VITB-Tigers/AutoViz-Python-Library",
         "link": "/",
         "blog": "autoviz",
-        "blogcontent": "lorem50sjkcajscbjksabdkjabddakdbajsbdbdkjsabdakdbakjsbdjkbd",
-        "desc": "Lorem Ipsum is a standard placeholder text used in the printing and typesetting industry. It originates from a scrambled section of De Finibus Bonorum et Malorum, a work by Cicero written in 45 BC. Designers and developers use Lorem Ipsum to fill spaces in layouts, allowing them to focus on design rather than content. The text has no real meaning but mimics natural language patterns, making it ideal for mockups and prototypes. Over time, it has become the industry standard for testing typography, readability, and visual balance in digital and print media. Many online generators can create Lorem Ipsum text of any length."
+        "desc": "A Python library for automatic data visualization that helps users generate insightful visualizations with minimal effort, making data exploration faster and more efficient."
 
     },
     {
@@ -50,8 +48,52 @@ projects = [
         "github": "https://github.com/VITB-Tigers/RAG-Project",
         "link": "/",
         "blog": "rag",
-        "blogcontent": "lorem50sjkcajscbjksabdkjabddakdbajsbdbdkjsabdakdbakjsbdjkbd",
-        "desc": "Lorem Ipsum is a standard placeholder text used in the printing and typesetting industry. It originates from a scrambled section of De Finibus Bonorum et Malorum, a work by Cicero written in 45 BC. Designers and developers use Lorem Ipsum to fill spaces in layouts, allowing them to focus on design rather than content. The text has no real meaning but mimics natural language patterns, making it ideal for mockups and prototypes. Over time, it has become the industry standard for testing typography, readability, and visual balance in digital and print media. Many online generators can create Lorem Ipsum text of any length."
+        "desc": "A powerful Retrieval-Augmented Generation (RAG) system built with Mistral LLM, offering local document processing and intelligent question answering capabilities."
+
+    },
+    {
+        "id": "cozyreader",
+        "name": "CozyReader",
+        "github": "https://github.com/VITB-Tigers/CozyReader",
+        "link": "/",
+        "blog": "cozyreader",
+        "desc": "CozyReader is an AI-powered bedtime storyteller that crafts personalized bedtime stories using advanced AI techniques, aiming to provide engaging and comforting narratives for users."
+
+    },
+    {
+        "id": "supervisedclassifiers",
+        "name": "Supervized Classifiers",
+        "github": "https://github.com/VITB-Tigers/Supervised-Classifiers",
+        "link": "/",
+        "blog": "supervizedclassifiers",
+        "desc": "This repository contains various supervised machine learning classifiers implemented in Python, providing tools to train and evaluate models for classification tasks across different datasets."
+
+    },
+    {
+        "id": "dataex",
+        "name": "Data Exploration",
+        "github": "https://github.com/VITB-Tigers/DataExploration-Pandas",
+        "link": "/",
+        "blog": "dataex",
+        "desc": "A Python library designed to assist in the data exploration process using Pandas. It provides efficient tools and methods to quickly clean, visualize, and analyze data, aiding in the initial stages of data science workflows."
+
+    },
+    {
+        "id": "rep",
+        "name": "Reinforcement Learning Policies",
+        "github": "https://github.com/VITB-Tigers/ReinforcementLearning-Policy",
+        "link": "/",
+        "blog": "rep",
+        "desc": "A repository focused on reinforcement learning algorithms with an emphasis on policy-based method DQN. It provides an implementation to explore various decision-making strategies through interaction with an environment."
+
+    },
+    {
+        "id": "docsimplifier",
+        "name": "Document Simplifier",
+        "github": "https://github.com/VITB-Tigers/Document-Simplifier",
+        "link": "/",
+        "blog": "docsimplifier",
+        "desc": "Document-Simplifier utilizes transfer learning to fine-tune large language models like Llama-2 on the CNN/Daily Mail dataset, enhancing text summarization capabilities for efficient and accessible content simplification."
 
     }
 ]

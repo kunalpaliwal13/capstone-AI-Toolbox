@@ -9,6 +9,10 @@ body {
     transition: 0.3s ease-in-out;
 }
 
+#projects {
+    scroll-margin-top: 80px; /* Adjust based on navbar height */
+}
+
 @keyframes colorChange {
     0% { opacity: 0; }
     100% { opacity: 1; }
@@ -219,14 +223,14 @@ body {
         font-family: "DM Serif Display", serif;
         font-weight: 400;
     }
-
-    
+   
 
     .cta-blog h1 {
         font-family: "DM Serif Display", serif;
         color: #275DAD;
         font-weight: 400;
         font-size: 30px;
+        margin-bottom: 0;
    }
 
     .cta-blog a {

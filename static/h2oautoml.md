@@ -1,4 +1,4 @@
-<br><h1>Introduction to H2O AutoML</h1>
+<br><h1>Introduction to AutoViz</h1>
 Machine learning has transformed industries, enabling data-driven decisions at an unprecedented scale. However, building robust models often requires significant expertise and time. This is where automated machine learning (AutoML) tools come into play, streamlining the entire process from data preprocessing to model selection and tuning.
 
 H2O AutoML is one such tool, offering an accessible yet powerful way to build machine learning models automatically. Despite its robust capabilities, newcomers might find it challenging to set up workflows or fully utilize its features. To address this, I created the Python H2O AutoML repository, which simplifies the adoption of H2O AutoML by offering an intuitive, modular framework.
