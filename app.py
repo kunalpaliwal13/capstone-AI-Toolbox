@@ -134,7 +134,7 @@ def blog(project_id):
     html_content = convert_markdown(md_content)
     print("aa",html_content)
 
-    return render_template("blog_template.html", content=html_content)
+    return render_template("blog_template.html", content=html_content, project_id = project_id)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
