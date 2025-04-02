@@ -46,7 +46,7 @@ projects = [
         "id": "rag",
         "name": "RAG",
         "github": "https://github.com/VITB-Tigers/RAG-Project",
-        "link": "/",
+        "link": "http://capstone.vanshr.live:8505/",
         "blog": "rag",
         "desc": "A powerful Retrieval-Augmented Generation (RAG) system built with Mistral LLM, offering local document processing and intelligent question answering capabilities."
 
@@ -64,7 +64,7 @@ projects = [
         "id": "supervisedclassifiers",
         "name": "Supervized Classifiers",
         "github": "https://github.com/VITB-Tigers/Supervised-Classifiers",
-        "link": "/",
+        "link": "http://capstone.vanshr.live:8504/",
         "blog": "supervizedclassifiers",
         "desc": "This repository contains various supervised machine learning classifiers implemented in Python, providing tools to train and evaluate models for classification tasks across different datasets."
 
@@ -73,7 +73,7 @@ projects = [
         "id": "dataex",
         "name": "Data Exploration",
         "github": "https://github.com/VITB-Tigers/DataExploration-Pandas",
-        "link": "/",
+        "link": "http://capstone.vanshr.live:8503/",
         "blog": "dataex",
         "desc": "A Python library designed to assist in the data exploration process using Pandas. It provides efficient tools and methods to quickly clean, visualize, and analyze data, aiding in the initial stages of data science workflows."
 
