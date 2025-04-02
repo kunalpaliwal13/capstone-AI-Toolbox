@@ -18,13 +18,14 @@
             </ul>
         </nav>
      <div class="blog-body">
-         {{ content|safe }}
+         <section class="cta-blog">
+        {{ content|safe }}
+    </section>
     </div>
     <footer id="contact">
         <p>© 2025 AI Project Hub | All Rights Reserved</p>
         <p>Made With Love by ❤️</p>
-        <p>Kunal Paliwal, Harsh Saand, Vansh Raja</p>
-        <p>Mohini Tiwari,  Aamna Jain</p>
+        <p>Kunal Paliwal, Harsh Saand, Vansh Raja, Mohini Tiwari,  Aamna Jain</p>
     </footer>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
     </body>
